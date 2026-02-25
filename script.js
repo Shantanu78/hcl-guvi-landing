@@ -475,4 +475,35 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // --- 5. Geolocation & Default Language ---
+    function detectLocation() {
+        if ("geolocation" in navigator) {
+            navigator.geolocation.getCurrentPosition(
+                (position) => {
+                    const lat = position.coords.latitude;
+                    const lon = position.coords.longitude;
+
+                    // Rough bounding box for Tamil Nadu / Chennai area
+                    const isTamilNadu = (lat >= 8.0 && lat <= 13.6 && lon >= 76.0 && lon <= 80.5);
+
+                    if (isTamilNadu) {
+                        setLanguage('ta');
+                    }
+                },
+                (error) => {
+                    // Error, permission denied, or timeout
+                    console.log("Location access denied or failed. Defaulting to Chennai (Tamil).");
+                    setLanguage('ta');
+                },
+                { timeout: 5000 }
+            );
+        } else {
+            console.log("Geolocation not supported. Defaulting to Chennai (Tamil).");
+            setLanguage('ta');
+        }
+    }
+
+    // Delay the location request slightly so it doesn't block initial page render
+    setTimeout(detectLocation, 1000);
+
 });
