@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HCL GUVI - Learn to code in your native language. India's leading EdTech platform for tech education with IIT Madras & IIM Ahmedabad backing.">
+    <title>HCL GUVI | Learn to Code in Your Native Language</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Top Announcement Banner -->
+    <div class="announcement-bar" id="announcement-bar">
+        <div class="announcement-content">
+            <span class="announcement-text" data-i18n="announcement">
+                🚀 Secure your future with Intel AIML — Master GenAI, Agentic AI, Deep Learning, LLM & MLOps.
+            </span>
+            <a href="#" class="announcement-cta" data-i18n="announcement_cta">Apply Now →</a>
+        </div>
+        <button class="announcement-close" onclick="document.getElementById('announcement-bar').style.display='none'" aria-label="Close">✕</button>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="#" class="logo">
+                    <div class="logo-icon">
+                        <span class="logo-g">G</span>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-brand">GUVI</span>
+                        <span class="logo-sub">by HCL</span>
+                    </div>
+                </a>
+                <div class="nav-links" id="nav-links">
+                    <div class="nav-item dropdown">
+                        <a href="#" data-i18n="nav_live_classes">LIVE Classes</a>
+                        <div class="dropdown-menu">
+                            <a href="#" data-i18n="nav_fullstack">Full Stack Development</a>
+                            <a href="#" data-i18n="nav_datascience">Data Science</a>
+                            <a href="#" data-i18n="nav_aiml">AI & Machine Learning</a>
+                            <a href="#" data-i18n="nav_uiux">UI/UX Design</a>
+                            <a href="#" data-i18n="nav_devops">DevOps</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" data-i18n="nav_courses">Courses</a>
+                        <div class="dropdown-menu">
+                            <a href="#" data-i18n="nav_free_courses">Free Courses</a>
+                            <a href="#" data-i18n="nav_paid_courses">Paid Courses</a>
+                            <a href="#" data-i18n="nav_combo_courses">Combo Courses</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" data-i18n="nav_practice">Practice</a>
+                        <div class="dropdown-menu">
+                            <a href="#">CodeKata</a>
+                            <a href="#">WebKata</a>
+                            <a href="#">SQLKata</a>
+                            <a href="#" data-i18n="nav_debugging">Debugging</a>
+                            <a href="#" data-i18n="nav_ide">IDE - Online Compiler</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" data-i18n="nav_resources">Resources</a>
+                        <div class="dropdown-menu">
+                            <a href="#" data-i18n="nav_blog">Blog</a>
+                            <a href="#" data-i18n="nav_success_stories">Success Stories</a>
+                            <a href="#" data-i18n="nav_learnhub">Learn Hub</a>
+                            <a href="#" data-i18n="nav_leaderboard">Leaderboard</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-right">
+                <a href="#" class="btn btn-ghost" data-i18n="nav_login">Login</a>
+                <a href="#" class="btn btn-primary" data-i18n="nav_signup">Sign Up</a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <div class="hero-badge" data-i18n="hero_badge">
+                    🎓 Incubated by IIT Madras & IIM Ahmedabad
+                </div>
+                <h1>
+                    <span data-i18n="hero_title_1">Learn to Code in</span>
+                    <br>
+                    <span class="gradient-text" data-i18n="hero_title_2">Your Native Language</span>
+                </h1>
+                <p class="hero-subtitle" data-i18n="hero_subtitle">
+                    India's leading EdTech platform making quality tech education accessible to all. 
+                    Join 3M+ learners breaking barriers and upskilling for a brighter future.
+                </p>
+                <div class="hero-cta">
+                    <a href="#" class="btn btn-primary btn-lg" data-i18n="hero_cta_explore">
+                        Explore Courses
+                    </a>
+                    <a href="#" class="btn btn-outline btn-lg" data-i18n="hero_cta_free">
+                        Start Free Course
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="3000000">3M+</span>
+                        <span class="stat-label" data-i18n="stat_learners">Learners</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">200+</span>
+                        <span class="stat-label" data-i18n="stat_courses">Courses</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">1500+</span>
+                        <span class="stat-label" data-i18n="stat_problems">Coding Problems</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">4.3⭐</span>
+                        <span class="stat-label" data-i18n="stat_rating">Google Rating</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-card hero-card-1">
+                    <div class="card-icon">🐍</div>
+                    <span>Python</span>
+                </div>
+                <div class="hero-card hero-card-2">
+                    <div class="card-icon">⚛️</div>
+                    <span>React</span>
+                </div>
+                <div class="hero-card hero-card-3">
+                    <div class="card-icon">🤖</div>
+                    <span data-i18n="hero_card_ai">AI / ML</span>
+                </div>
+                <div class="hero-card hero-card-4">
+                    <div class="card-icon">📊</div>
+                    <span data-i18n="hero_card_ds">Data Science</span>
+                </div>
+                <div class="hero-illustration">
+                    <div class="code-window">
+                        <div class="window-bar">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                        </div>
+                        <pre class="code-content">
+<code><span class="code-keyword">def</span> <span class="code-func">learn</span>(language):
+    <span class="code-keyword">print</span>(<span class="code-string">f"Learning in {language}!"</span>)
+    <span class="code-keyword">return</span> <span class="code-string">"Success 🚀"</span>
+
+<span class="code-comment"># Learn in your mother tongue</span>
+learn(<span class="code-string">"Tamil"</span>)
+learn(<span class="code-string">"Hindi"</span>)
+learn(<span class="code-string">"Marathi"</span>)</code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Classes Section -->
+    <section class="section live-classes" id="live-classes">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="live_tag">FLAGSHIP PROGRAMS</span>
+                <h2 data-i18n="live_title">Live Classes + Placement Guidance</h2>
+                <p data-i18n="live_subtitle">HCL GUVI's expert-led tech programs for beginners and professionals. Master in-demand skills with IITM Pravartak certifications.</p>
+            </div>
+            <div class="course-grid">
+                <!-- Course Card 1 -->
+                <div class="course-card">
+                    <div class="course-badge badge-hot" data-i18n="badge_popular">Most Popular</div>
+                    <div class="course-icon">💻</div>
+                    <h3 data-i18n="course_fullstack">Full Stack Development</h3>
+                    <p class="course-cert" data-i18n="course_fullstack_cert">IIT-M Pravartak Certified</p>
+                    <ul class="course-features">
+                        <li data-i18n="course_fullstack_f1">MERN Stack Mastery</li>
+                        <li data-i18n="course_fullstack_f2">Live Project Building</li>
+                        <li data-i18n="course_fullstack_f3">Placement Assistance</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary btn-sm" data-i18n="course_explore">Explore Program →</a>
+                </div>
+                <!-- Course Card 2 -->
+                <div class="course-card">
+                    <div class="course-badge badge-new" data-i18n="badge_new">New</div>
+                    <div class="course-icon">🤖</div>
+                    <h3 data-i18n="course_aiml">AI & Machine Learning</h3>
+                    <p class="course-cert" data-i18n="course_aiml_cert">Intel & IIT-M Pravartak Certified</p>
+                    <ul class="course-features">
+                        <li data-i18n="course_aiml_f1">GenAI & Agentic AI</li>
+                        <li data-i18n="course_aiml_f2">Deep Learning & LLM</li>
+                        <li data-i18n="course_aiml_f3">MLOps Pipeline</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary btn-sm" data-i18n="course_explore">Explore Program →</a>
+                </div>
+                <!-- Course Card 3 -->
+                <div class="course-card">
+                    <div class="course-icon">📊</div>
+                    <h3 data-i18n="course_ds">Data Science</h3>
+                    <p class="course-cert" data-i18n="course_ds_cert">IIT-M Pravartak Certified</p>
+                    <ul class="course-features">
+                        <li data-i18n="course_ds_f1">Statistics & ML</li>
+                        <li data-i18n="course_ds_f2">Data Visualization</li>
+                        <li data-i18n="course_ds_f3">Python & SQL Mastery</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary btn-sm" data-i18n="course_explore">Explore Program →</a>
+                </div>
+                <!-- Course Card 4 -->
+                <div class="course-card">
+                    <div class="course-icon">🎨</div>
+                    <h3 data-i18n="course_uiux">UI/UX Design</h3>
+                    <p class="course-cert" data-i18n="course_uiux_cert">HCL GUVI Certified</p>
+                    <ul class="course-features">
+                        <li data-i18n="course_uiux_f1">Figma & Design Systems</li>
+                        <li data-i18n="course_uiux_f2">User Research</li>
+                        <li data-i18n="course_uiux_f3">Real Client Projects</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary btn-sm" data-i18n="course_explore">Explore Program →</a>
+                </div>
+                <!-- Course Card 5 -->
+                <div class="course-card">
+                    <div class="course-icon">⚙️</div>
+                    <h3 data-i18n="course_devops">DevOps</h3>
+                    <p class="course-cert" data-i18n="course_devops_cert">HCL GUVI Certified</p>
+                    <ul class="course-features">
+                        <li data-i18n="course_devops_f1">CI/CD Pipelines</li>
+                        <li data-i18n="course_devops_f2">Docker & Kubernetes</li>
+                        <li data-i18n="course_devops_f3">Cloud Deployment</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary btn-sm" data-i18n="course_explore">Explore Program →</a>
+                </div>
+                <!-- Course Card 6 -->
+                <div class="course-card">
+                    <div class="course-icon">🧪</div>
+                    <h3 data-i18n="course_testing">Automation Testing</h3>
+                    <p class="course-cert" data-i18n="course_testing_cert">HCL GUVI Certified</p>
+                    <ul class="course-features">
+                        <li data-i18n="course_testing_f1">Selenium Framework</li>
+                        <li data-i18n="course_testing_f2">API Testing</li>
+                        <li data-i18n="course_testing_f3">CI Integration</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary btn-sm" data-i18n="course_explore">Explore Program →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Practice Platforms Section -->
+    <section class="section practice-platforms" id="practice">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="practice_tag">PRACTICE & LEARN</span>
+                <h2 data-i18n="practice_title">Learn. Practice. Earn. Have Fun!</h2>
+                <p data-i18n="practice_subtitle">Enhance your coding skills with HCL GUVI's interactive practice platforms designed to help you master programming effortlessly.</p>
+            </div>
+            <div class="platform-grid">
+                <div class="platform-card">
+                    <div class="platform-icon">⌨️</div>
+                    <h3>CodeKata</h3>
+                    <p data-i18n="codekata_desc">1500+ coding problems curated by top IT industry experts. Sharpen skills, prepare for interviews.</p>
+                    <a href="#" class="platform-link" data-i18n="platform_explore">Explore →</a>
+                </div>
+                <div class="platform-card">
+                    <div class="platform-icon">🌐</div>
+                    <h3>WebKata</h3>
+                    <p data-i18n="webkata_desc">Build frontend & backend development skills with HTML, CSS, JavaScript practice.</p>
+                    <a href="#" class="platform-link" data-i18n="platform_explore">Explore →</a>
+                </div>
+                <div class="platform-card">
+                    <div class="platform-icon">🗃️</div>
+                    <h3>SQLKata</h3>
+                    <p data-i18n="sqlkata_desc">Master SQL concepts in relational database management with hands-on exercises.</p>
+                    <a href="#" class="platform-link" data-i18n="platform_explore">Explore →</a>
+                </div>
+                <div class="platform-card">
+                    <div class="platform-icon">🐛</div>
+                    <h3 data-i18n="debugging_title">Debugging</h3>
+                    <p data-i18n="debugging_desc">Fix real-world bugs in Python, C++, JavaScript, and Golang. Curated by industry experts.</p>
+                    <a href="#" class="platform-link" data-i18n="platform_explore">Explore →</a>
+                </div>
+                <div class="platform-card">
+                    <div class="platform-icon">🖥️</div>
+                    <h3 data-i18n="ide_title">IDE - Online Compiler</h3>
+                    <p data-i18n="ide_desc">Run & test your code in 20+ programming languages with AI-powered code generation.</p>
+                    <a href="#" class="platform-link" data-i18n="platform_explore">Explore →</a>
+                </div>
+                <div class="platform-card">
+                    <div class="platform-icon">🏆</div>
+                    <h3 data-i18n="rewards_title">Rewards & Referral</h3>
+                    <p data-i18n="rewards_desc">Earn Geekoins, redeem for Amazon vouchers, iPhones & more! Share and earn.</p>
+                    <a href="#" class="platform-link" data-i18n="platform_explore">Explore →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section stats-section" id="stats">
+        <div class="container">
+            <h2 class="stats-title" data-i18n="stats_title">We are proud of...</h2>
+            <div class="stats-grid">
+                <div class="stats-card">
+                    <div class="stats-number" data-target="3000000">0</div>
+                    <div class="stats-label" data-i18n="stats_learners">Learners Enrolled</div>
+                </div>
+                <div class="stats-card">
+                    <div class="stats-number" data-target="200">0</div>
+                    <div class="stats-label" data-i18n="stats_courses_count">Courses Available</div>
+                </div>
+                <div class="stats-card">
+                    <div class="stats-number" data-target="150">0</div>
+                    <div class="stats-label" data-i18n="stats_corporate">Corporate Partners</div>
+                </div>
+                <div class="stats-card">
+                    <div class="stats-number" data-target="1500">0</div>
+                    <div class="stats-label" data-i18n="stats_problems_count">Coding Problems</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories / Testimonials -->
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="testimonials_tag">SUCCESS STORIES</span>
+                <h2 data-i18n="testimonials_title">What Our Learners Are Saying!</h2>
+                <p data-i18n="testimonials_subtitle">Rated 4.3/5.0 — More than 2500 Google Reviews</p>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <p data-i18n="testimonial_1_text">I've been a non-IT professional for six years and switched to IT through HCL GUVI's Full Stack Development course. The flexible schedule, expert instructors, and mock interviews helped me secure my first IT role.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SK</div>
+                        <div>
+                            <strong>Sri Hari K</strong>
+                            <span data-i18n="testimonial_1_role">Full Stack Developer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <p data-i18n="testimonial_2_text">HCL GUVI's Data Science Program was fantastic. It covered statistics, machine learning, data visualization, and Python. The hands-on projects significantly improved my data science skills.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RK</div>
+                        <div>
+                            <strong>Ramya Krishnan</strong>
+                            <span data-i18n="testimonial_2_role">Data Scientist</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <p data-i18n="testimonial_3_text">The teaching with query resolution was excellent. My mentors explained concepts in Tamil in really clear-cut ways. Placement support along with mock interviews was very useful.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">VG</div>
+                        <div>
+                            <strong>Vinitha G</strong>
+                            <span data-i18n="testimonial_3_role">Node.js Developer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skill Assessment CTA -->
+    <section class="section cta-section" id="cta">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-content">
+                    <h2 data-i18n="cta_title">Not sure which path to choose?</h2>
+                    <p data-i18n="cta_subtitle">Take our free Skill Assessment and discover the right program tailored for you.</p>
+                    <a href="#" class="btn btn-primary btn-lg" data-i18n="cta_button">Free Skill Assessment →</a>
+                </div>
+                <div class="cta-graphic">
+                    <div class="cta-emoji">🎯</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <span class="logo-g">G</span>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-brand">GUVI</span>
+                            <span class="logo-sub">by HCL</span>
+                        </div>
+                    </div>
+                    <p data-i18n="footer_desc">India's leading EdTech platform for learning in native languages. Incubated by IIT Madras & IIM Ahmedabad.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                        <a href="#" aria-label="Instagram">📸</a>
+                        <a href="#" aria-label="YouTube">▶️</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4 data-i18n="footer_programs">Programs</h4>
+                    <a href="#" data-i18n="nav_fullstack">Full Stack Development</a>
+                    <a href="#" data-i18n="nav_datascience">Data Science</a>
+                    <a href="#" data-i18n="nav_aiml">AI & Machine Learning</a>
+                    <a href="#" data-i18n="nav_uiux">UI/UX Design</a>
+                    <a href="#" data-i18n="nav_devops">DevOps</a>
+                </div>
+                <div class="footer-links">
+                    <h4 data-i18n="footer_practice">Practice</h4>
+                    <a href="#">CodeKata</a>
+                    <a href="#">WebKata</a>
+                    <a href="#">SQLKata</a>
+                    <a href="#" data-i18n="nav_debugging">Debugging</a>
+                    <a href="#" data-i18n="nav_ide">IDE - Online Compiler</a>
+                </div>
+                <div class="footer-links">
+                    <h4 data-i18n="footer_company">Company</h4>
+                    <a href="#" data-i18n="footer_about">About Us</a>
+                    <a href="#" data-i18n="footer_careers">Careers</a>
+                    <a href="#" data-i18n="footer_blog">Blog</a>
+                    <a href="#" data-i18n="footer_contact">Contact</a>
+                    <a href="#" data-i18n="footer_privacy">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer_copyright">© 2026 HCL GUVI. All rights reserved. A subsidiary of HCL Technologies.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Language Switch Button (FLOATING) -->
+    <div class="lang-switch-container" id="lang-switch-container">
+        <!-- Language dropdown (shown when no location or on manual select) -->
+        <div class="lang-dropdown" id="lang-dropdown">
+            <div class="lang-dropdown-header" data-i18n="lang_choose">Choose Language</div>
+            <div class="lang-dropdown-list" id="lang-dropdown-list">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+        <!-- Main floating button -->
+        <button class="lang-switch-btn pulse" id="lang-switch-btn" aria-label="Switch Language">
+            <span class="lang-icon">🌐</span>
+            <span class="lang-btn-text" id="lang-btn-text" data-i18n="lang_switch">Switch Language</span>
+        </button>
+    </div>
+
+    <!-- Toast notification -->
+    <div class="toast" id="toast">
+        <span id="toast-message"></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
