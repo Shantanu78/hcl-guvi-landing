@@ -517,22 +517,32 @@ document.addEventListener('DOMContentLoaded', () => {
                     const lat = position.coords.latitude;
                     const lon = position.coords.longitude;
 
-                    // Rough bounding box for Tamil Nadu / Chennai area
+                    // Rough bounding box for Tamil Nadu
                     const isTamilNadu = (lat >= 8.0 && lat <= 13.6 && lon >= 76.0 && lon <= 80.5);
 
-                    if (isTamilNadu) {
+                    // Rough bounding box for Maharashtra
+                    const isMaharashtra = (lat >= 15.6 && lat <= 22.0 && lon >= 72.6 && lon <= 80.9);
+
+                    if (isMaharashtra) {
+                        console.log("Location detected: Maharashtra. Switching to Marathi.");
+                        setLanguage('mr');
+                    } else if (isTamilNadu) {
+                        console.log("Location detected: Tamil Nadu. Switching to Tamil.");
+                        setLanguage('ta');
+                    } else {
+                        console.log("Location outside set regions. Defaulting to Chennai (Tamil).");
                         setLanguage('ta');
                     }
                 },
                 (error) => {
                     // Error, permission denied, or timeout
-                    console.log("Location access denied or failed. Defaulting to Chennai (Tamil).");
+                    console.error("Location access denied or failed:", error.message, "- Defaulting to Chennai (Tamil).");
                     setLanguage('ta');
                 },
                 { timeout: 5000 }
             );
         } else {
-            console.log("Geolocation not supported. Defaulting to Chennai (Tamil).");
+            console.log("Geolocation not supported by this browser. Defaulting to Chennai (Tamil).");
             setLanguage('ta');
         }
     }
